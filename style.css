@@ -308,9 +308,13 @@ article.active {
   z-index: -1;
 }
 
+.indent {
+    text-indent: 2em;
+  }
 
-
-
+.justify {
+  text-align: justify;
+}
 
 /*-----------------------------------*\
     #MAIN
