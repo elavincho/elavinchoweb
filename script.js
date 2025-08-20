@@ -160,15 +160,43 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
 
 // Sweet alert
-document.getElementById("contactForm").addEventListener("submit", function (e) {
-  Swal.fire({
-    icon: 'success',
-    title: '¡Mensaje enviado!',
-    text: 'Te responderemos pronto',
-    confirmButtonText: 'Aceptar'
-  });
+// document.getElementById("contactForm").addEventListener("submit", function (e) {
+//   Swal.fire({
+//     icon: 'success',
+//     title: '¡Mensaje enviado!',
+//     text: 'Te responderemos pronto',
+//     confirmButtonText: 'Aceptar'
+//   });
 
-  setTimeout(() => {
-    form.reset();
-  }, 5000);
+//   setTimeout(() => {
+//     form.reset();
+//   }, 5000);
+// });
+
+
+// Variables del modal
+const confirmationModal = document.getElementById('confirmationModal');
+const contactForm = document.getElementById('contactForm');
+
+// Función para abrir/cerrar el modal
+const toggleModal = function () {
+  confirmationModal.classList.toggle("active");
+}
+
+// Evento de envío del formulario
+contactForm.addEventListener('submit', function (e) {
+
+  toggleModal(); // Mostrar el modal
+
+  contactForm.reset(); // Limpiar el formulario
 });
+
+// Cerrar modal al hacer clic en la X
+modalCloseBtn.addEventListener('click', toggleModal);
+
+// Cerrar modal al hacer clic fuera del contenido
+overlay.addEventListener('click', toggleModal);
+
+
+
+
