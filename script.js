@@ -158,3 +158,17 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
+
+// Sweet alert
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+  Swal.fire({
+    icon: 'success',
+    title: '¡Mensaje enviado!',
+    text: 'Te responderemos pronto',
+    confirmButtonText: 'Aceptar'
+  });
+
+  setTimeout(() => {
+    form.reset();
+  }, 5000);
+});

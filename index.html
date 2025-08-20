@@ -123,6 +123,7 @@
           <h2 class="h2 article-title">Sobre Mí</h2>
         </header>
 
+
         <section class="about-text">
           <p class="indent justify">
             Soy Estudiante de la Técnicatura Superior en Desarrolo de Software en el IFTS N° 29.
@@ -1067,7 +1068,8 @@
         <section class="contact-form">
           <h3 class="h3 form-title">Formulario de Contacto</h3>
 
-          <form action="https://formsubmit.co/elavincho@gmail.com" method="POST" class="form" data-form>
+          <form id="contactForm" action="https://formsubmit.co/elavincho@gmail.com" method="POST" class="form"
+            data-form>
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Nombre Completo" required
                 data-form-input />
@@ -1088,6 +1090,7 @@
               <span>Enviar Mensaje!</span>
             </button>
           </form>
+          <textarea name="message" class="form-input" placeholder="Tu Mensaje!" required data-form-input></textarea>
         </section>
       </article>
     </div>
@@ -1103,6 +1106,7 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
