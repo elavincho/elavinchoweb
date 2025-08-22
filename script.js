@@ -188,7 +188,7 @@ contactForm.addEventListener('submit', function (e) {
 
   toggleModal(); // Mostrar el modal
 
-  contactForm.reset(); // Limpiar el formulario
+  //contactForm.reset(); // Limpiar el formulario
 });
 
 // Cerrar modal al hacer clic en la X
